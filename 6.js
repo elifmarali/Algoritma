@@ -15,9 +15,12 @@
 // }
 
 
-const solutions = (n) => {
+/* const solutions = (n) => {
     const revizeNum = n.toString().split("").map(Number);
     return revizeNum.reduce((a, b) => a * b, 1) - revizeNum.reduce((a, b) => a + b, 0)
 }
 
-console.log(solutions(434)); 
+console.log(solutions(434));  */
+
+
+console.log(3 << 4);
