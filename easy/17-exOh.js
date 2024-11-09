@@ -1,22 +1,16 @@
 export const exOh = (str) => {
-    const arr = str.split("");
-    const strInfo = { xCounter: 0, oCounter: 0 };
-    arr.forEach((arrItem) => {
-        if (arrItem === "x") {
-            strInfo.xCounter += 1;
-        } else {
-            strInfo.oCounter += 1;
-        }
+    const counter = { x: 0, o: 0 };
+    const strArr = str.split("");
+    strArr.map((str) => {
+        str === 'o' ? counter.o += 1 : counter.x += 1;
     })
-
-    if (strInfo.xCounter === strInfo.oCounter) {
-        return true
+    if (counter.o === counter.x) {
+        return true;
     } else {
-        return false
+        return false;
     }
+};
 
-
-}
 
 /*
 Ex Oh
